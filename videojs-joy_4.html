@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video.js</title>
+</head>
+<body>
+
+  <video-js id=vid1 width=600 height=300 class="vjs-default-skin" controls>
+    <source      
+    src="https://d1vd7dt03rqq3m.cloudfront.net/out/v1/b8685ecfbb0f4166a414324756a0d415/index_4.m3u8" type="application/x-mpegURL">
+  </video-js>
+  <!-- <script src="video.js"></script> -->
+  <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
+  <script>
+  var player = videojs('vid1');
+  player.play();
+  </script>
+</body>
+</html>
